@@ -1,13 +1,14 @@
 @Library('testdemo') _
 pipeline {
   agent any
+  environemnt{
+  name=test.envname()
+  }
   stages {
     stage('test') {
       steps {
-        echo 'hello world'
-        script{
-         test.envname()
-        }
+        echo 'hello world $name'
+      
       }
     }
 
