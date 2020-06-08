@@ -1,7 +1,7 @@
 @Library('testdemo') _
 pipeline {
   agent any
-  environemnt{
+  environment{
   name=test.envname()
   }
   stages {
