@@ -9,7 +9,7 @@ pipeline {
       steps {
 
         echo "hello new world $name"
-        
+        echo "from dev2"
 
       
       }
