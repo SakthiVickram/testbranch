@@ -7,7 +7,10 @@ pipeline {
   stages {
     stage('test') {
       steps {
-        echo "hello world $name"
+
+        echo "hello new world $name"
+        echo "from dev2"
+
       
       }
     }
