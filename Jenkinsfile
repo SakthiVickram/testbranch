@@ -8,8 +8,7 @@ pipeline {
     stage('test') {
       steps {
          println test.checkBranchIndexing()
-        println currentBuild.rawBuild.getCauses()
-        println test.info()
+        println test.info("hi")
         echo "hello existing world $name"
         echo "from dev2"
 
