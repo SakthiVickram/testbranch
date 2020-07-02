@@ -7,8 +7,10 @@ pipeline {
   stages {
     stage('test') {
       steps {
+
         echo "hello new world $name"
-        echo hello
+        
+
       
       }
     }
