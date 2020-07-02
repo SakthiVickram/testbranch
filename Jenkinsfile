@@ -1,4 +1,9 @@
 @Library('testdemo') _
+if(test.checkBranchIndexing()){
+   // error('Some error text')
+
+    return
+}
 pipeline {
   agent any
   environment{
