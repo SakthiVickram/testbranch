@@ -1,4 +1,9 @@
 @Library('testdemo') _
+if(test.checkBranchIndexing()){
+   // error('Some error text')
+
+    return
+}
 pipeline {
   agent any
   environment{
@@ -7,8 +12,9 @@ pipeline {
   stages {
     stage('test') {
       steps {
-
-        echo "hello new world $name"
+         println test.checkBranchIndexing()
+        println test.info("hii")
+        echo "hello existing world $name"
         echo "from dev2"
 
       
