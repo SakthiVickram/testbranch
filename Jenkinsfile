@@ -13,7 +13,7 @@ pipeline {
     stage('test') {
       steps {
          println test.checkBranchIndexing()
-        println test.info("hii again")
+        println test.info("hii again test pr2")
         echo "hello existing world $name"
         echo "from dev2"
 
